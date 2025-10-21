@@ -33,7 +33,7 @@ const Navbar = () => {
             href="#Testimonials"
             className="cursor-pointer hover:text-gray-400"
           >
-            Testimonials
+            Testimonails
           </a>
         </ul>
         <button className="hidden md:block bg-white px-8 py-2 round-full">
@@ -72,8 +72,8 @@ const Navbar = () => {
             Projects
           </a>
           <a
-            href="Testimonials"
-            className="px-4 py-2 rounded-full inline-block"
+            href="#Testimonials"
+            className="cursor-pointer hover:text-gray-400"
           >
             Testimonials
           </a>

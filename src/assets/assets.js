@@ -36,45 +36,45 @@ export const assets = {
 export const projectsData = [
   {
     title: "Skyline Haven",
-    price: "$2,50,000",
-    location: "California",
+    price: "$250,000",
+    location: "Addis Abeba",
     image: project_img_1,
   },
   {
     title: "Vista Verde",
-    price: "$2,50,000",
-    location: "San Francisco",
+    price: "$250,000",
+    location: "Adama",
     image: project_img_2,
   },
   {
     title: "Serenity Suites",
-    price: "$2,50,000",
-    location: "Chicago",
+    price: "$250,000",
+    location: "jimmaa",
     image: project_img_3,
   },
   {
     title: "Central Square",
-    price: "$2,50,000",
-    location: "Los Angeles",
+    price: "$250,000",
+    location: "Nekemt",
     image: project_img_4,
   },
   {
     title: "Vista Verde",
-    price: "$2,50,000",
-    location: "San Francisco",
+    price: "$250,000",
+    location: "dire dawa",
     image: project_img_5,
   },
   {
     title: "Serenity Suites",
-    price: "$2,50,000",
-    location: "Chicago",
+    price: "$250,000",
+    location: "harar",
     image: project_img_6,
   },
 ];
 
 export const testimonialsData = [
   {
-    name: "Donald Jackman",
+    name: "Yohanis Tesfa",
     title: "Marketing Manager",
     image: profile_img_1,
     alt: "Portrait of Donald Jackman",
@@ -82,7 +82,7 @@ export const testimonialsData = [
     text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.",
   },
   {
-    name: "Richard Nelson",
+    name: "Hayu Yonatan",
     title: "UI/UX Designer",
     image: profile_img_2,
     alt: "Portrait of Richard Nelson",
@@ -90,7 +90,7 @@ export const testimonialsData = [
     text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.",
   },
   {
-    name: "James Washington",
+    name: "Firaol Tsegaye",
     title: "Co-Founder",
     image: profile_img_3,
     alt: "Portrait of James Washington",
