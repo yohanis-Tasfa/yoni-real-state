@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { assets } from "../assets/assets";
 
-const Navbar = () => {
+const Navbar = ({ toggleSignup, isLoggedIn, handleLogout }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   useEffect(() => {
@@ -33,12 +33,26 @@ const Navbar = () => {
             href="#Testimonials"
             className="cursor-pointer hover:text-gray-400"
           >
-            Testimonails
+            Testimonials
           </a>
         </ul>
-        <button className="hidden md:block bg-white px-8 py-2 round-full">
-          Sign up
-        </button>
+        <div className="hidden md:flex items-center gap-4">
+          {!isLoggedIn ? (
+            <button
+              onClick={toggleSignup}
+              className="bg-white px-8 py-2 rounded-full"
+            >
+              Sign up
+            </button>
+          ) : (
+            <button
+              onClick={handleLogout}
+              className="bg-red-500 text-white px-8 py-2 rounded-full"
+            >
+              Logout
+            </button>
+          )}
+        </div>
         <img
           onClick={() => setShowMobileMenu(true)}
           src={assets.menu_icon}
@@ -47,11 +61,10 @@ const Navbar = () => {
         />
       </div>
       {/* -----------------mobile-menu----------- */}
-
       <div
-        className={`md:hidden   ${
+        className={`md:hidden ${
           showMobileMenu ? "fixed w-full" : "h-0 w-0"
-        }  right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}
+        } right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}
       >
         <div className="flex justify-end p-6 cursor-pointer">
           <img
@@ -61,7 +74,7 @@ const Navbar = () => {
             alt=""
           />
         </div>
-        <ul className="flex flex-col items-center gap-1 mt-5 px-5 text-lg font-medium   ">
+        <ul className="flex flex-col items-center gap-1 mt-5 px-5 text-lg font-medium">
           <a href="#Header" className="px-4 py-2 rounded-full inline-block">
             Home
           </a>
@@ -77,6 +90,21 @@ const Navbar = () => {
           >
             Testimonials
           </a>
+          {!isLoggedIn ? (
+            <button
+              onClick={toggleSignup}
+              className="px-4 py-2 rounded-full bg-pink-500 text-white mt-2"
+            >
+              Sign up
+            </button>
+          ) : (
+            <button
+              onClick={handleLogout}
+              className="px-4 py-2 rounded-full bg-red-500 text-white mt-2"
+            >
+              Logout
+            </button>
+          )}
         </ul>
       </div>
     </div>

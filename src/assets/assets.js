@@ -82,7 +82,7 @@ export const testimonialsData = [
     text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.",
   },
   {
-    name: "Hayu Yonatan",
+    name: "Firaol Tsegaye",
     title: "UI/UX Designer",
     image: profile_img_2,
     alt: "Portrait of Richard Nelson",
@@ -90,7 +90,7 @@ export const testimonialsData = [
     text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched.",
   },
   {
-    name: "Firaol Tsegaye",
+    name: "Lami Getachew",
     title: "Co-Founder",
     image: profile_img_3,
     alt: "Portrait of James Washington",

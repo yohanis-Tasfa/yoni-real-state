@@ -77,7 +77,7 @@ const Contact = () => {
         <div className="my-6 text-left">
           message
           <textarea
-            className="w-full border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none"
+            className="w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none"
             name="Message"
             placeholder="message"
             required
