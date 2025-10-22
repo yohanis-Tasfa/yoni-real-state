@@ -1,5 +1,6 @@
 import React from "react";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -30,7 +31,11 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
       id="Contact"
     >
@@ -41,7 +46,7 @@ const Contact = () => {
         </span>
       </h1>
       <p className="text-center text-gray-500 mb-12 max-w-80 mx-auto">
-        to make a move?lets build your future togethere
+        to make a move? lets build your future togethere
       </p>
       <form
         onSubmit={onSubmit}
@@ -82,7 +87,7 @@ const Contact = () => {
           {result ? result : "send message"}
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 
