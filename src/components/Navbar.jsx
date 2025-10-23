@@ -40,14 +40,14 @@ const Navbar = ({ toggleSignup, isLoggedIn, handleLogout }) => {
           {!isLoggedIn ? (
             <button
               onClick={toggleSignup}
-              className="bg-white px-8 py-2 rounded-full"
+              className="bg-white px-8 py-2 rounded-full cursor-pointer"
             >
               Sign up
             </button>
           ) : (
             <button
               onClick={handleLogout}
-              className="bg-red-500 text-white px-8 py-2 rounded-full"
+              className="bg-red-500 text-white px-8 py-2 rounded-full cursor-pointer"
             >
               Logout
             </button>
@@ -93,14 +93,14 @@ const Navbar = ({ toggleSignup, isLoggedIn, handleLogout }) => {
           {!isLoggedIn ? (
             <button
               onClick={toggleSignup}
-              className="px-4 py-2 rounded-full bg-pink-500 text-white mt-2"
+              className="px-4 py-2 rounded-full bg-pink-500 text-white mt-2 cursor-pointer"
             >
               Sign up
             </button>
           ) : (
             <button
               onClick={handleLogout}
-              className="px-4 py-2 rounded-full bg-red-500 text-white mt-2"
+              className="px-4 py-2 rounded-full bg-red-500 text-white mt-2 cursor-pointer"
             >
               Logout
             </button>
