@@ -8,6 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer";
 import Signup from "./components/Signup";
+import {} from "framer-motion/client";
 
 function App() {
   const [showSignup, setShowSignup] = useState(false);
@@ -30,9 +31,10 @@ function App() {
   const handleLoginSuccess = () => {
     setIsLoggedIn(true);
     setShowSignup(false); // Close modal after login
+
     toast.success("Logged in successfully!", {
       position: "top-right",
-      autoClose: 3000,
+      autoClose: 1000,
     });
     window.scrollTo({ top: 0, behavior: "smooth" }); // Redirect to home
   };
@@ -41,8 +43,9 @@ function App() {
     setIsLoggedIn(false);
     toast.info("Logged out successfully!", {
       position: "top-right",
-      autoClose: 3000,
+      autoClose: 1000,
     });
+    toggleSignup();
   };
 
   return (
@@ -52,6 +55,7 @@ function App() {
         toggleSignup={toggleSignup}
         isLoggedIn={isLoggedIn}
         handleLogout={handleLogout}
+        // This fixes everything!
       />
       {showSignup && (
         <Signup

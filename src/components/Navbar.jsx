@@ -20,7 +20,7 @@ const Navbar = ({ toggleSignup, isLoggedIn, handleLogout }) => {
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-gray-800 shadow-md">
         <img src={assets.logo} alt="logo" />
         <ul className="hidden md:flex gap-7 text-white">
-          <a href="#header" className="cursor-pointer hover:text-gray-400">
+          <a href="#Header" className="cursor-pointer hover:text-gray-400">
             Home
           </a>
           <a href="#About" className="cursor-pointer hover:text-gray-400">
@@ -75,16 +75,29 @@ const Navbar = ({ toggleSignup, isLoggedIn, handleLogout }) => {
           />
         </div>
         <ul className="flex flex-col items-center gap-1 mt-5 px-5 text-lg font-medium">
-          <a href="#Header" className="px-4 py-2 rounded-full inline-block">
+          <a
+            onClick={() => setShowMobileMenu(false)}
+            href="#Header"
+            className="px-4 py-2 rounded-full inline-block"
+          >
             Home
           </a>
-          <a href="#About" className="px-4 py-2 rounded-full inline-block">
+          <a
+            onClick={() => setShowMobileMenu(false)}
+            href="#About"
+            className="px-4 py-2 rounded-full inline-block"
+          >
             About
           </a>
-          <a href="#Projects" className="px-4 py-2 rounded-full inline-block">
+          <a
+            onClick={() => setShowMobileMenu(false)}
+            href="#Projects"
+            className="px-4 py-2 rounded-full inline-block"
+          >
             Projects
           </a>
           <a
+            onClick={() => setShowMobileMenu(false)}
             href="#Testimonials"
             className="cursor-pointer hover:text-gray-400"
           >
